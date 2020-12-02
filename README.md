@@ -22,7 +22,7 @@ To acquire an access token run ``node index.js``.
 
 ### Example Response
 
-The response will look something like this (depending of the claims configured):
+The response will look something like this (depending on the claims configured):
 
 ```js
 token:
