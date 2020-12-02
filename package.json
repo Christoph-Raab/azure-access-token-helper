@@ -1,5 +1,5 @@
 {
-  "name": "Azure Access Token Helper",
+  "name": "azure-access-token-helper",
   "description": "A simple commandline-like tool to request an access_token as jwt from AzureAd.",
   "dependencies": {
     "axios": "^0.21.0",
