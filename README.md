@@ -2,7 +2,10 @@
 
 ### Introduction
 
-This commandline-like tool can be used to acquire an access_token from an AzureAD app registration. It will fetch the token from the app registration and print the token and the parsed content.
+This commandline-like tool can be used to acquire an access_token from an AzureAD app registration. 
+It will fetch a valid token from and print the raw token and the parsed content.
+
+A non MS Graph default scope ``clientId/.default`` is configured. 
 
 ### Prerequisites
 
@@ -13,7 +16,7 @@ Run ``npm install -g npm`` in your preferred terminal to install both.
 
 1) Clone the repository: ``git clone https://github.com/Christoph-Raab/azure-access-token-helper.git``
 2) Navigate into the directory and install the dependencies: ``npm install``
-3) Update ``CLIENT_ID``, ``CLIENT_SECRET`` and ``TENANT_ID`` inside the file ``index.js``
+3) Update ``CLIENT_ID``, ``CLIENT_SECRET`` and ``TENANT_ID`` in the file ``index.js``
 4) Optional: Adjust the scope
 
 ### Acquire Token
@@ -22,7 +25,7 @@ To acquire an access token run ``node index.js``.
 
 ### Example Response
 
-The response will look something like this (depending on the claims configured):
+Below is an example response with a minimal token, not containing any optional claims like ``groups``.
 
 ```js
 token:
